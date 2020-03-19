@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    mang = [];
+    for (i = 0; i < 10; i++) {
+        mang[i] = prompt('Nhập ký tự:');
+    }
+    let kytu = prompt('Nhập vào ký tự tìm kiếm:');
+    let solan = 0;
+    ketqua = test();
+    function test() {
+        if (mang.indexOf(kytu) == -1) {
+            return -1;
+        } else {
+            for (i = 0; i < 10; i++) {
+                if (kytu == mang[i]) {
+                    solan++;
+                }
+            }
+            return solan;
+        }
+    }
+    document.write(ketqua);
+</script>
+</body>
+</html>

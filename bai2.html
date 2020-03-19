@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let pi = 3.14;
+    let r = Number(prompt("nhap vao ban kinh"));
+    let s = tinhDienTich(r);
+    let c = tinhChuVi(r);
+    function tinhDienTich(a) {
+        return a * a * pi;
+        
+    }
+    function tinhChuVi(a) {
+        return 2 * a * pi;
+
+    }
+    document.write("dien tich hinh tron la " + s + "<br/>");
+    document.write("chu vi hinh tron la " + c);
+</script>
+</body>
+</html>
